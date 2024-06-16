@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommender</title>
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <input type="text" id="search" placeholder="Search for recommendations">
+      <button id="search-btn">Search</button>
+      <button id="clear-btn">Clear</button>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Welcome to Travel Recommender!</h1>
+      <p>Find your dream destination and create unforgettable travel experiences.</p>
+      <a href="#explore">Explore Now!</a>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a passionate team dedicated to helping you discover the world's hidden gems and create unforgettable travel memories. 
+        Whether you're seeking relaxation on pristine beaches, exploring ancient temples, or immersing yourself in vibrant cultures, we have the perfect recommendation for you.</p>
+      <h3>Meet the Team</h3>
+      <ul>
+        <li>Name: Siddhesh Singh - Role: Founder</li>
+        <li>Name: Jane Smith - Role: Travel Specialist</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><<br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <section id="results">
+      <h2>Search Results</h2>
+      <div class="result-container"></div>
+    </section>
+  </main>
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
